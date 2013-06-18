@@ -1,5 +1,5 @@
 {
-  "sha": "860ddb1d3fbf6e7faaf82b3e45a8faf64435301e",
+  "sha": "aa64f933741fffcf7035df9d3387df2f698db176",
   "sources": {
     "apt": {
       "locked_version": "2.0.0"
@@ -13,8 +13,50 @@
     "postgresql": {
       "locked_version": "3.0.2"
     },
+    "rvm": {
+      "locked_version": "0.9.1",
+      "git": "git://github.com/fnichol/chef-rvm.git",
+      "ref": "7038fb8c518d0d7785767de215b1ae463f237973"
+    },
+    "rvm_passenger": {
+      "locked_version": "0.8.3",
+      "git": "git://github.com/fnichol/chef-rvm_passenger.git",
+      "ref": "2648c09eceb961414321bd203969500b7d40334e"
+    },
     "openssl": {
       "locked_version": "1.0.2"
+    },
+    "java": {
+      "locked_version": "1.11.6"
+    },
+    "windows": {
+      "locked_version": "1.10.0"
+    },
+    "chef_handler": {
+      "locked_version": "1.1.4"
+    },
+    "chef_gem": {
+      "locked_version": "0.1.0"
+    },
+    "nginx": {
+      "locked_version": "0.101.6",
+      "constraint": "~> 0.101.0"
+    },
+    "runit": {
+      "locked_version": "1.1.6"
+    },
+    "yum": {
+      "locked_version": "2.3.0"
+    },
+    "bluepill": {
+      "locked_version": "2.2.2"
+    },
+    "rsyslog": {
+      "locked_version": "1.6.0"
+    },
+    "ohai": {
+      "locked_version": "1.0.2",
+      "constraint": "~> 1.0.2"
     }
   }
 }
