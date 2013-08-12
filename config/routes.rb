@@ -6,5 +6,6 @@ IvanTheTerriblesBlog::Application.routes.draw do
 
   root :to => 'posts#index'
 
+  match 'auth/:provider/callback', to: 'sessions#create'
 end
 
