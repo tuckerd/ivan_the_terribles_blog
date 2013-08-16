@@ -29,6 +29,7 @@ GEM
       i18n (= 0.6.1)
       multi_json (~> 1.0)
     arel (3.0.2)
+    awesome_print (1.1.0)
     better_errors (0.9.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -60,6 +61,9 @@ GEM
       i18n (~> 0.5)
     hike (1.2.3)
     hirb (0.7.1)
+    httparty (0.11.0)
+      multi_json (~> 1.0)
+      multi_xml (>= 0.5.2)
     i18n (0.6.1)
     journey (1.0.4)
     jquery-rails (3.0.1)
@@ -76,6 +80,7 @@ GEM
     method_source (0.8.1)
     mime-types (1.23)
     multi_json (1.7.7)
+    multi_xml (0.5.4)
     pg (0.15.1)
     polyglot (0.3.3)
     pry (0.9.12.2)
@@ -156,11 +161,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print
   better_errors
   binding_of_caller
   coffee-rails (~> 3.2.1)
   faker
   hirb
+  httparty
   jquery-rails
   meta_request
   pg

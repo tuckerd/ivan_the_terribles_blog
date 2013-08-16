@@ -4,7 +4,7 @@ gem 'rails', '3.2.13'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
+gem 'httparty'
 gem 'pg'
 
 # Gems used only for assets and not required
@@ -26,6 +26,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-doc'
   gem 'pry-debugger'
+  gem 'awesome_print'
   gem 'hirb'
   gem 'faker'
 end
