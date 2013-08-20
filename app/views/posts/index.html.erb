@@ -8,7 +8,7 @@
     <h2><%= post.title %></h2>
     <div><%= post.body %></div>
     <div class="post_nav">
-      <%= link_to "Hide Comments", "#", class: "hide" %>
+      <%= link_to "Hide Comments", "javascript://hide stuff", class: "hide" %>
       <%= link_to 'Show Comments', post_comments_path(post), remote: true, id: "show_comments" %> |
       <%= link_to 'Edit', edit_post_path(post) %> |
       <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
