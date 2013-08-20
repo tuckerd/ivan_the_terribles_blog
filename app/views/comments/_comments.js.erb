@@ -1,0 +1,10 @@
+<% cache do %>
+<% @comments.each do |comment| %>
+  <p><%= comment.body %></p>
+  <div class="reply">
+    <% comment.replies.each do |reply| %>
+      <p><%= reply.body %></p>
+    <% end %>
+  </div>
+<% end %>
+<% end %>

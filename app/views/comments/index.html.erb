@@ -1,25 +1,26 @@
-<h1>Listing comments</h1>
+<h1><%= @post.title %> Comments</h1>
+
+<%= paginate @comments %>
 
 <table>
   <tr>
     <th>Body</th>
     <th>Post</th>
-    <th></th>
-    <th></th>
-    <th></th>
+
   </tr>
 
 <% @comments.each do |comment| %>
-  <tr>
-    <td><%= comment.body %></td>
-    <td><%= comment.post %></td>
-    <td><%= link_to 'Show', comment %></td>
-    <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
-    <td><%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+  <p>
+    <%= comment.body %>
+    <td><%= comment.post.id %></td>
+    <div class="post_nav">
+      <%= link_to 'Show Replies', post_comment_path(@post, comment) %> |
+      <%= link_to 'Edit', edit_post_comment_path(@post, comment) %> |
+      <%= link_to 'Destroy', post_comment_path(@post, comment), method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
+  </p>
 <% end %>
-</table>
 
 <br />
 
-<%= link_to 'New Comment', new_comment_path %>
+<%= link_to 'New Comment', new_post_comment_path(@post) %>

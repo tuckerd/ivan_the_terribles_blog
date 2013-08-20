@@ -1,12 +1,14 @@
 class CommentsController < ApplicationController
+  before_filter :set_post
   # GET /comments
   # GET /comments.json
   def index
-    @comments = Comment.all
+    @comments = Comment.joins(:replies).page(params[:page])
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @comments }
+      format.js
     end
   end
 
@@ -79,5 +81,10 @@ class CommentsController < ApplicationController
       format.html { redirect_to comments_url }
       format.json { head :no_content }
     end
+  end
+
+private
+  def set_post
+    @post = Post.find(params[:post_id])
   end
 end

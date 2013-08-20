@@ -1,0 +1,4 @@
+var div_element = $('#post_comments<%= @post.id %>')
+div_element.html("<%= j render "comments" %>")
+div_element.parent().find('#show_comments').hide()
+div_element.parent().find('.hide').show()
