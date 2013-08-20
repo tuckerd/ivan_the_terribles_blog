@@ -24,7 +24,7 @@ gem 'jquery-rails'
 gem 'faker'  #create fake data in rake tasks
 gem 'rack-mini-profiler' #page speed metrics
 gem 'kaminari' #pagnation
-gem 'newrelic_rpm'
+#gem 'newrelic_rpm'
 
 group :deployment do
   gem 'unicorn'
